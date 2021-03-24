@@ -24,6 +24,8 @@ public class OrderLine {
     @Enumerated(EnumType.STRING)
     private OrderLineStatus status;
 
+    public OrderLine() {}
+
     public OrderLine(String item, int quantity, BigDecimal totalPrice) {
         this.item = item;
         this.quantity = quantity;
